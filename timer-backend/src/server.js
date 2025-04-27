@@ -19,6 +19,7 @@ app.get('/members', async (req, res) => {
         const details = await db.collection('members').find().toArray();
         res.json(details);
     } catch (error) {
+        console.error("Error fetching members:", error); // Log the error for debugging
         res.status(500).json({ error: "Failed to fetch members" });
     }
 });
