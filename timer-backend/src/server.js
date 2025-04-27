@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://toastmasters-time-keeper.vercel.app/"],
+    origin: ["https://tm-timer-8jrz.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true,
   })
