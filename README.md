@@ -1,2 +1,2 @@
-## ideations
+## ideation
 ![ideation](./ideation.png "Toastmasters Timekeeper")
