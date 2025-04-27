@@ -5,7 +5,7 @@ import { db, connectToDB } from "./db.js";
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["https://tm-timer-8jrz.vercel.app/"],
+    origin: ["https://tm-timer-8jrz.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }));
