@@ -18,6 +18,7 @@ export default function App() {
   const [selectedOption, setSelectedOption] = useState("");
   const [selectedName, setSelectedName] = useState("");
   // var stype='';
+  axios.defaults.withCredentials=true;
 
   useEffect(() => {
     axios
