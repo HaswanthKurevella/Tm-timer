@@ -11,7 +11,7 @@ const Report = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/reports')
+      .get('https://tm-backend-chi.vercel.app/reports')
       .then((res) => {
         console.log(res.data);
         setData(res.data);

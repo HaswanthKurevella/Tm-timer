@@ -22,7 +22,7 @@ export default function App() {
 
   useEffect(() => {
     axios
-      .get("https://timer-backend-mu.vercel.app/members")
+      .get("https://tm-backend-chi.vercel.app/members")
       .then((res) => {
         setData(res.data);
       })
@@ -48,7 +48,7 @@ export default function App() {
 
     // console.log('stype',stype);
     const response = await axios.post(
-      `https://timer-backend-mu.vercel.app/saveresult/${selectedName}/${today}/${stopTime}/${selectedOption}`
+      `https://tm-backend-chi.vercel.app/saveresult/${selectedName}/${today}/${stopTime}/${selectedOption}`
     );
     console.log(response.data);
     if (response.data) {
