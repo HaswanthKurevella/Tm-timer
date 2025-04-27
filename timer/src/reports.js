@@ -11,7 +11,7 @@ const Report = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/reports')
+      .get('https://timer-backend-mu.vercel.app/reports')
       .then((res) => {
         console.log(res.data);
         setData(res.data);
@@ -42,9 +42,9 @@ const Report = () => {
   
     // Add the date and time
     const date = new Date();
-    const dateString = `${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()}`;
-    const timeString = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-    doc.text(`Downloaded for the date: ${dateString} at ${timeString}`, 10, 25);
+    const dateString = ${date.getMonth()+1}/${date.getDate()}/${date.getFullYear()};
+    const timeString = ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()};
+    doc.text(Downloaded for the date: ${dateString} at ${timeString}, 10, 25);
   
     // Get the table HTML element
     const table = document.querySelector("table");
